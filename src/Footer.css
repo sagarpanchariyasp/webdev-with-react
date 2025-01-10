@@ -1,0 +1,45 @@
+.footer {
+    background-color: #1f1f1f; /* Match the site theme */
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .social-links {
+    margin: 1rem 0;
+  }
+  
+  .social-links a {
+    color: #00d8ff; /* Matching the color theme */
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.1rem;
+  }
+  
+  .social-links a:hover {
+    color: #007a8e; /* Darken on hover */
+  }
+  
+  p {
+    margin: 0.5rem 0;
+  }
+  
+  span[role="img"] {
+    color: #ff4d4d; /* Red for heart emoji */
+  }
+
+  @media (max-width: 768px) {
+    .footer {
+        margin-left: 1rem;
+    }
+
+  }
+  

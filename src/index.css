@@ -1,0 +1,281 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #1f1f1f;
+  color: white;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/* Navbar styling */
+nav {
+  background-color: #121212;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0rem 0rem 5rem #121212 ;
+  padding: 0 20px;
+}
+
+#logo {
+  height: 3.5rem;
+}
+
+nav ul {
+  
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #121212;
+  padding: 0;
+  margin: 0;
+  height: 4.2rem;
+
+}
+
+/* List items */
+nav ul li {
+  list-style: none;
+  margin-right: 3rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
+nav ul li a:hover {
+  color: #00b3cc;
+  text-decoration: underline;
+  text-decoration-color: #00b3cc;
+}
+
+/* Hiding the menu icon initially */
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block; /* Show hamburger icon */
+  }
+
+  /* Initially hide the menu for mobile */
+  nav ul {
+    flex-direction: column;
+    background-color: blueviolet;
+    width: 100%;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom:0;
+    right: 0;
+    transition: transform 0.3s ease;
+    transform: translateY(-150%);
+    
+    /* display: none; */
+  }
+
+  nav ul.active {
+    /* display: flex; */
+    transform: translateX(0); /* Show the menu when active */
+  }
+  
+
+  /* Align menu items vertically */
+  nav ul li {
+    margin: 20px 0;
+  }
+  nav {
+    width: 100%;
+    height: 5rem;
+  }
+  #logo {
+    height: 2.5rem;
+  }
+}
+
+/* Hero Section */
+
+.herosection {
+  display: flex;
+}
+#heroimage {
+  height: 80vh;
+}
+#heroheading {
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff !important; 
+}
+#herosubtitle {
+  color: #f0f0f0 !important;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem ;
+}
+#herocontent {
+    color: white !important;
+    font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+#herosection {
+margin-left:0.5rem;
+  
+}
+/* Why React Section */
+#why-react {
+  padding: 0rem 2rem ;
+
+  background-color: #1f1f1f; /* Dark background to match the theme */
+  color: white;
+}
+
+/* Why Card Container */
+.why-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+/* Why Card Styling */
+.why-card {
+  background-color: #282828; /* Slightly lighter background for the card */
+  padding: 2rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  width: 30%; /* 3 cards in a row for larger screens */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.why-card:hover {
+  transform: scale(1.05); /* Slight scale on hover */
+}
+
+.card-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #00d8ff; /* Icon color matching the website theme */
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #b3b3b3; /* Light grey text color */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .why-card {
+    width: 45%; /* 2 cards in a row for tablets/mobile devices */
+  }
+} 
+
+@media (max-width: 480px) {
+  .why-card {
+    margin-left: 1.2rem;
+    width: 100%; /* 1 card per row for small screens */
+  }
+}
+
+/* ProfitReact.css */
+
+/* Section styles */
+.profit-section {
+  padding: 2rem;
+  background-color: #282828; /* Matching the theme */
+  color: white;
+  text-align: center;
+  margin-left: 1.2rem;
+}
+
+.profit-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* List styles */
+.profit-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Card styles */
+.profit-card {
+  background-color: #121212;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profit-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.profit-card p {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+/* Media queries for mobile responsiveness */
+@media (max-width: 768px) {
+  .profit-section h2 {
+    font-size: 2rem;
+  }
+
+  .profit-card {
+    padding: 1rem;
+
+    
+  }
+
+  .profit-card h3 {
+    font-size: 1.25rem;
+  }
+
+  .profit-card p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .profit-section h2 {
+    font-size: 1.75rem;
+    margin-left: 1rem;
+  }
+
+  .profit-card {
+    padding: 0.75rem;
+  }
+
+  .profit-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .profit-card p {
+    font-size: 0.85rem;
+  }
+}
+
