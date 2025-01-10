@@ -69,11 +69,6 @@ For any inquiries or feedback, please contact:
 Name: Sagar Panchariya
 Email: sagarpanchariya160@gmail.com
 GitHub: sagarpanchariyasp
-less
-Copy code
 
-**Note**: Replace `[sagarpanchariya160@gmail.com](mailto:sagarpanchariya160@gmail.com)` with your actual email address to provide a direct contact method.
 
-Feel free to modify this template to better suit your project's needs. Let me know if you need further assistance!
-::contentReference[oaicite:0]{index=0}
- 
+
